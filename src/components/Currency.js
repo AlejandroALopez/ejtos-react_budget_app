@@ -16,11 +16,11 @@ const Currency = () => {
     return (
         <div className='alert alert-secondary'>
             <label htmlFor="currency">Currency</label>
-            <select className='form-select alert alert-success' id="currency" value={curr} name="currency" onChange={handleCurrencyChange}>
+            <select className='form-select' style={{"backgroundColor": "lightgreen"}} id="currency" value={curr} name="currency" onChange={handleCurrencyChange}>
                 <option value="$">$ Dollar</option>
                 <option value="£">£ Pound</option>
                 <option value="€">€ Euro</option>
-                <option className='bg-green' value="₹">₹ Ruppee</option>
+                <option value="₹">₹ Ruppee</option>
             </select>
         </div>
     );
